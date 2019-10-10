@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                              <!-- Head-->
+	<meta charset="utf-8"/>
+	<title> The Swimming Project </title>
+	<meta name="description" content="learn to swimming as a long term skill and a personal project to achive"> <!-- Open and close tag-->
+	<!-- Link to Your CSS document-->
+	<link href="responsive-layout.css" rel="stylesheet"/>
+<script>
+		function checkBrowser(){
+		if ((navigator.userAgent.indexOf( "Opera" ) ||
+		navigator.userAgent.indexOf( 'OPR' )) != -1 )
+		{
+		alert( 'Opera' );
+		//or write to the page element demo, therefore preventing a popup
+		document.getElementById( "demo" ).innerHTML = "Opera" ;
+		}
+		else if (navigator.userAgent.indexOf("Chrome") != -1 )
+		{
+		alert( 'Chrome' );
+		document.getElementById( "demo" ).innerHTML="Chrome" ;
+		}
+		else if (navigator.userAgent.indexOf( "Safari" ) != -1)
+		{
+		alert( 'Safari' );
+		}
+		else if (navigator.userAgent.indexOf( "Firefox" ) != -1 )
+		{
+		alert( 'Firefox' );
+		document.getElementById( "demo" ).innerHTML = "Firefox" ;
+		}
+		else if ((navigator.userAgent.indexOf( "MSIE" ) != -1 ) ||
+		(!! document.documentMode == true )) //IF IE > 10
+		{
+		alert( 'IE' );
+		}
+		else
+		{
+		alert( 'unknown' );
+		}
+	}
+</script>
+</head> 
+<!-- end head --> 
+<body onload="checkBrowser()"> <!-- <body onload="incrementCount(10)"> --> 
+	<header> <!-- we call now just the header now in HTML 5, we us to call with </div id= "header"....> -->
+		<img src="images/logo.jpg" alt=" ">
+		<h2 style>  The Swimming Project </h2>
+	</header>
+	<nav class="clear">
+		<div class="element">
+			<ul>
+				<li><a href="index.html"> Home </a></li>
+				<li><a href="trainningtips.html"> Trainning Tips </a></li>
+				<li><a href="references.html"> References </a></li>
+				<li><a href="contact.html"> Contact </a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<section>	
+			<div class = "row">
+				<div class = "column2" >
+					<img src="images/1.jpg" width="440" alt="1">
+				</div>				
+				<div class = "column2" > 
+						<h2> Welcome to The Swimming Project</h2>
+						<div>
+							<p> A personal website, where I will share information my personal project as a swimming instructor, tips for beginners and advance swimmers, at the same time feel free to suggest me any about, please click the button below...</p>
+						</div>
+						<a href="contact.html" class="button"> Suggestions </a> 
+				</div>
+			</div>
+			
+		</section>
+	</main>
+		<footer>
+			  <p>Copy Rigths</p> <!-- we call now just the footer now in HTML 5,  we us to call with </div id= "footer"....>-->
+			  			  
+		</footer>
+	</body>
+</html>
